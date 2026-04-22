@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500&display=swap');
+
+:root {
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Outfit', system-ui, sans-serif;
+
+  --bg-deep: #d81b60;
+  --surface: rgba(80, 40, 60, 0.65);
+  --surface-2: rgba(60, 25, 45, 0.9);
+  --text-bright: #faf6f2;
+  --text-body: rgba(250, 246, 242, 0.82);
+  --text-soft: rgba(250, 246, 242, 0.55);
+  --accent-warm: #ff6b9d;
+  --accent-gold: #f55a9b;
+  --accent-muted: rgba(255, 107, 157, 0.55);
+  --border-soft: rgba(255, 107, 157, 0.15);
+  --border-hover: rgba(255, 107, 157, 0.28);
+
+  color-scheme: dark;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-body);
+  background-color: var(--bg-deep);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(ellipse 120% 80% at 50% 0%, #ad1457 0%, var(--bg-deep) 55%);
+}
+
+#root {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+}
+
+a {
+  color: var(--accent-warm);
+}
